@@ -1,5 +1,20 @@
 # jeopardy-game-wdi
-Project 1 - WDI-ATL
+
+DESCRIPTION
+For my first WDI Project, I decided to create a jeopardy game.
+https://www.bitballoon.com/sites/dianer-jeopardy-game-5e11a7
+
+
+INSPIRATION
+
+USER STORES
+Here are the user stories a link to my [Trello Board](https://trello.com/b/0b5flAN0/wdi-project-1-diane-jeopardy) . <Insert or link to screenshots>
+
+TECHNOLOGIES USED
+ - jQuery
+
+WIREFRAMES
+
 
 - A Project description
   - A Link to the Deployed App
