@@ -29,7 +29,7 @@
         /* grid-template-rows: 100px 100px 100px 100px 100px 100px;
     grid-auto-flow: column;
   } */
-
+/* STYLE VERSION 2 */
 body {
     display: flex;
     flex-direction: column;
@@ -43,6 +43,7 @@ header {
     font-size: 300%;
     font-weight: bold;
     font-family: 'Bungee', cursive;
+    height: 100px;
 }
 .grid-container {
     width: 60%;
@@ -60,3 +61,32 @@ header {
     text-align: center;
     margin: 3px;
   }
+
+.used-box {
+    background-color: rgb(106, 63, 27);
+    color: rgb(145, 143, 143);
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 100%;
+    text-align: center;
+    margin: 3px;
+  }
+
+#final-trivia {
+    background-color: rgb(46, 70, 105);
+    color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 100%;
+    text-align: center;
+    margin: 3px;
+}
+.score {
+    background-color: rgb(124, 71, 115);
+    color: #fff;
+    border-radius: 5px;
+    padding: 50px;
+    font-size: 150%;
+    text-align: center;
+    margin: 3px; 
+}

@@ -12,6 +12,9 @@ $(document).ready(function() {
     // set variable for clicking on a level 100 box, level 200 box, etc
     //  HOLD ON THIS FOR NOW
 
+    // TRIVIA QUESTIONS
+
+
     $('#gameboard').on('click', '#box100-c1', function() {
         let answer = prompt('The animated character who plays a reindeer in the Disney story Frozen. COMPLETE ANSWER: Who is: ')
             if ((answer === 'Sven' || answer === 'sven' || answer === 'SVEN') && (answer !== '')) {
@@ -23,10 +26,10 @@ $(document).ready(function() {
                 alert("Sorry, that's incorrect")
                 newScore -= 100
             }
-            // Figure out how to return score to the screen
-            //  based on changing variable of newScore
-            // $('#box100-c1').replaceWith("<div class='box'>Test</div>")
-            document.getElementById('current-score').innerHTML = newScore;
+            // make box no longer clickable
+            $('#box100-c1').replaceWith("<div class='used-box'>played</div>")
+            // update score
+            $('#current-score').html(newScore)
         });
 
         $('#gameboard').on('click', '#box200-c1', function() {
@@ -34,10 +37,12 @@ $(document).ready(function() {
             if (answer === 'Sven' || 'sven' || 'SVEN') {
                 alert("That's correct!")
                 newScore += 200
-                console.log(newScore)
-                // Figure out how to return score to the screen
-                //  based on changing variable of newScore
-                document.getElementById('current-score').innerHTML = newScore;
             }
-        })
-    });
+            else {
+                alert("Sorry, that's incorrect")
+                newScore -= 100
+            }
+            $('#box200-c1').replaceWith("<div class='used-box'>played</div>")
+            $('#current-score').html(newScore)
+            })
+        });
