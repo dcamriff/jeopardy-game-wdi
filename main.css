@@ -1,0 +1,31 @@
+
+  body {
+    margin: 40px 200px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  header {
+      text-align: left;
+      font-size: 300%;
+      font-weight: bold;
+      font-family: 'Bungee', cursive;
+  }
+  /* sourced below from gridbyexample.com but changed some elements */
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 200%;
+    text-align: center;
+  }
+  
+  .grid {
+    width: 600px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 200px 200px 200px;
+    /* grid-template-columns: repeat(6, 100px); */
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-auto-flow: column;
+  }
