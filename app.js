@@ -13,18 +13,24 @@ $(document).ready(function() {
     //  HOLD ON THIS FOR NOW
 
     $('#gameboard').on('click', '#box100-c1', function() {
-        let answer = prompt('The animated character who plays a reindeer in the Disney story Frozen. Who is: ')
-        if (answer === 'Sven' || 'sven' || 'SVEN') {
+        let answer = prompt('The animated character who plays a reindeer in the Disney story Frozen. COMPLETE ANSWER: Who is: ')
+        if (answer === 'Sven' || answer === 'sven' || answer === 'SVEN' || answer !== '') {
             alert("That's correct!")
             newScore += 100
             console.log(newScore)
+        }
+            else {
+                alert("Sorry, that's incorrect")
+                newScore -= 100
+            }
             // Figure out how to return score to the screen
             //  based on changing variable of newScore
+            // $('#box100-c1').replaceWith("<div class='box'>Test</div>")
             document.getElementById('current-score').innerHTML = newScore;
-        }
+        });
 
         $('#gameboard').on('click', '#box200-c1', function() {
-            let answer = prompt('The animated character who plays a reindeer in the Disney story Frozen. Who is: ')
+            let answer = prompt('The animated character who plays a reindeer in the Disney story Frozen. COMPLETE ANSWER: Who is: ')
             if (answer === 'Sven' || 'sven' || 'SVEN') {
                 alert("That's correct!")
                 newScore += 200
@@ -34,5 +40,4 @@ $(document).ready(function() {
                 document.getElementById('current-score').innerHTML = newScore;
             }
         })
-    })
-});
+    });
