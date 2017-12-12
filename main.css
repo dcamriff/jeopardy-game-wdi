@@ -1,5 +1,5 @@
 
-  body {
+  /* body {
     margin: 40px 200px;
     font-family: 'Lato', sans-serif;
   }
@@ -28,4 +28,4 @@
     /* grid-template-columns: repeat(6, 100px); */
     grid-template-rows: 100px 100px 100px 100px 100px 100px;
     grid-auto-flow: column;
-  }
+  } */
