@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     $('#gameboard').on('click', '#box100-c1', function() {
         let answer = prompt('The animated character who plays a reindeer in the Disney story Frozen. COMPLETE ANSWER: Who is: ')
-        if (answer === 'Sven' || answer === 'sven' || answer === 'SVEN' || answer !== '') {
+            if ((answer === 'Sven' || answer === 'sven' || answer === 'SVEN') && (answer !== '')) {
             alert("That's correct!")
             newScore += 100
             console.log(newScore)
