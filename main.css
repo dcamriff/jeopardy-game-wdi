@@ -37,13 +37,17 @@ body {
     /* padding: 5px; */
     font-family: 'Lato', sans-serif;
     text-align: center;
+    background-image: url("images/round.png")
 }
 header {
     text-align: center;
     font-size: 300%;
     font-weight: bold;
     font-family: 'Bungee', cursive;
-    height: 100px;
+    height: 125px;
+    background-color: rgba(214, 247, 254, .8);
+    padding: 30px 5px 5px 5px;
+    width: 100%;
 }
 .grid-container {
     width: 60%;
@@ -51,15 +55,28 @@ header {
     grid-gap: 7px;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 100px 100px 100px 100px 100px;
+    padding: 40px 10px;
 }
+.boxcat {
+    background-color: rgb(71, 41, 67);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 100%;
+    text-align: center;
+    margin: 3px;
+    height: 40px;
+    font-weight: bold;
+  }
 .box {
     background-color: #444;
     color: #fff;
     border-radius: 5px;
-    padding: 30px;
+    padding: 20px;
     font-size: 100%;
     text-align: center;
     margin: 3px;
+    height: 40px;
   }
 
 .used-box {
