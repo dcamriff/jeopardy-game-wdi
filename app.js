@@ -5,50 +5,41 @@ $(document).ready(function () {
     let newScore = 0
     
     // DATA MANAGEMENT - questions for gameboard boxes/tiles
-    let triviaBoxes = [
-        {
-        boxId: 'box1-c1',
-        question: 'The name of the reindeer belonging to Kristoff in the Disney story Frozen. Who is ...',
-        answer: 'Sven',
-        points: 100,
-        }
+    // let triviaBoxes = [
+    //     {
+    //     // boxId: 'box1-c1',
+    //     q1: 'The name of the reindeer belonging to Kristoff in the Disney story Frozen. Who is ...',
+    //     a1: 'Sven',
+    //     points: 100,
+    //     },
 
-        {
-        boxId: 'box2-c1',
-        question: 'tbd',
-        answer: 'tbd',
-        points: 200,
-        }
+    //     {
+    //     // boxId: 'box2-c1',
+    //     q1: 'to be determined',
+    //     a2: 'tbd',
+    //     points: 200,
+    //     },
 
-        {
-        boxId: 'box3-c1',
-        question: 'tbd',
-        answer: 'tbd',
-        points: 200,
-        }
-
-    ]
-
+    //     {
+    //     // boxId: 'box3-c1',
+    //     q3: 'tbd',
+    //     a3: 'tbd',
+    //     points: 200,
+    //     }
+    // ]
     // ALERTS
-    const correctAlert1 = alert("That's correct! You're on a roll!")
-    const correctAlert2 = alert('Fantastic! You answered correctly!')
-    const correctAlert3 = alert("Way to go! You are correct!")
-    const incorrectAlert1 = alert('Not quite, but good try!')
-    const incorrectAlert2 = alert("Oh, that's not it, but keep trying!")
-    const incorrectAlert3 = alert("Hmm, that's not it, but try another!")
+    // const correctAlert1 = alert("That's correct! You're on a roll!")
+    // const correctAlert2 = alert('Fantastic! You answered correctly!')
+    // const correctAlert3 = alert("Way to go! You are correct!")
+    // const incorrectAlert1 = alert('Not quite, but good try!')
+    // const incorrectAlert2 = alert("Oh, that's not it, but keep trying!")
+    // const incorrectAlert3 = alert("Hmm, that's not it, but try another!")
 
-    // GLOBAL FUNCTIONS
-    function getIndex() {
-        $(this).attr('data-box');
-        if 
-
-    }
-
-
+    
 //   THIS ONE HERE IS MASTER THAT IS WORKING -- DO NOT TOUCH BELOW!!
-    $('#gameboard').on('click', '#box1-c1', function () {
-        let answer = prompt('The animated character who plays a reindeer in the Disney story Frozen. COMPLETE ANSWER: Who is: ')
-        if ((answer === 'Sven' || answer === 'sven' || answer === 'SVEN') && (answer !== '')) {
+    $('#gameboard').on('click', '#0', function () {
+        let answer = (prompt('The animated character who plays a reindeer in the Disney story Frozen. COMPLETE ANSWER: Who is: ').toUpperCase())
+        if ((answer === 'SVEN') && (answer !== '')) {
             alert("That's correct!")
             newScore += 100
             console.log(newScore)
@@ -64,22 +55,31 @@ $(document).ready(function () {
     });
 //  DO NOT CHANGE ABOVE!!
 
-    $('.box').on('click', function () {
-        let question = $(this.).attr('data-box')
-        let answer = prompt(question)
-        if ((answer === $(this).attr('answer1')) && (answer !== '')) {
-            correctAlert1()
-            newScore += 200
-        }
-        else {
-            incorrectAlert1()
-            newScore -= 200
-        }
-        $(this.box).replaceWith("<div class='used-box'>played</div>")
-        $('#current-score').html(newScore)
-    });
+// PSEUDOCODE IT...
+// When a box is clicked
+// create a variable that looks up the clicked on box's id
+// take that new variable and set it equal to the array index
+// find the object attributes of that index
+    // $('#gameboard').on('click', function (event) {
+    //     // let indexNum = parseInt.data(box)
+    //     $('div').click(handler).find('#id')
+    //     let question = $(this).attr('data-box')
+    //     let answer = (prompt(question).toUpperCase())
+    //     if ((answer === $(this).triviaBoxes[indexNum].answer) && (answer !== '')) {
+    //         correctAlert1()
+    //         newScore += $(this).triviaBoxes[indexNum].points
+    //     }
+    //     else {
+    //         incorrectAlert1()
+    //         newScore -= $(this).triviaBoxes[indexNum].points
+    //     }
+    //     $(this.box).replaceWith("<div class='used-box'>played</div>")
+    //     $('#current-score').html(newScore)
+    // });
+// TESTING ABOVE
+// 
 
-    $('#gameboard').on('click', '#box3-c1', function () {
+    $('#gameboard').on('click', '#2', function () {
         let answer = (prompt("The animal's name that leads Santa's sleigh. >> Who is ... ").toUpperCase())
             if ((answer === 'RUDOLPH') && (answer !== '')) {
             alert("YOU'RE AMAZING GIRL")
@@ -93,7 +93,7 @@ $(document).ready(function () {
         $('#current-score').html(newScore)
     });
 
-    $('#gameboard').on('click', '#box4-c1', function () {
+    $('#gameboard').on('click', '#3', function () {
         let answer = prompt('The animated character who plays a reindeer in the Disney story Frozen. COMPLETE ANSWER: Who is: ')
         if ((answer === 'Sven' || answer === 'sven' || answer === 'SVEN') && (answer !== '')) {
             alert("That's correct!")
@@ -107,7 +107,7 @@ $(document).ready(function () {
         $('#current-score').html(newScore)
     });
 
-    $('#gameboard').on('click', '#box5-c1', function () {
+    $('#gameboard').on('click', '#4', function () {
         let answer = prompt('The animated character who plays a reindeer in the Disney story Frozen. COMPLETE ANSWER: Who is: ')
         if ((answer === 'Sven' || answer === 'sven' || answer === 'SVEN') && (answer !== '')) {
             alert("That's correct!")
