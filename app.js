@@ -13,14 +13,15 @@ $(document).ready(function () {
     //  HOLD ON THIS FOR NOW
 
     // TRIVIA QUESTIONS
-    let questions = {
-        trivia: 'The name of the reindeer belonging to Kristoff in the Disney story Frozen.'<br>'Who is ...',
+    let questions = [
+    {
+        boxId: 'box1-c1',
+        question: 'The name of the reindeer belonging to Kristoff in the Disney story Frozen. Who is ...',
         answer1: 'Sven',
-        answer2: 'sven',
-        answer3: 'SVEN'
         points: 100,
         }
-
+    ]
+//   THIS ONE HERE IS MASTER THAT IS WORKING -- DO NOT TOUCH BELOW!!
     $('#gameboard').on('click', '#box1-c1', function () {
         let answer = prompt('The animated character who plays a reindeer in the Disney story Frozen. COMPLETE ANSWER: Who is: ')
         if ((answer === 'Sven' || answer === 'sven' || answer === 'SVEN') && (answer !== '')) {
@@ -37,25 +38,26 @@ $(document).ready(function () {
         // update score
         $('#current-score').html(newScore)
     });
+//  DO NOT CHANGE ABOVE!!
 
-    $('.box').on('click', function () {
-        let question = $(this.).attr('data-question')
-        let answer = prompt(question)
-        if ((answer === $(this).attr('answer1') || $(this).attr('answer2') || $(this).attr('answer3')) && (answer !== '')) {
-            alert("That's correct!")
-            newScore += 200
-        }
-        else {
-            alert("Sorry, that's incorrect")
-            newScore -= 200
-        }
-        $('#box2-c1').replaceWith("<div class='used-box'>played</div>")
-        $('#current-score').html(newScore)
-    });
+    // $('.box').on('click', function () {
+    //     let question = $(this.).attr('data-box')
+    //     let answer = prompt(question)
+    //     if ((answer === $(this).attr('answer1') || $(this).attr('answer2') || $(this).attr('answer3')) && (answer !== '')) {
+    //         alert("That's correct!")
+    //         newScore += 200
+    //     }
+    //     else {
+    //         alert("Sorry, that's incorrect")
+    //         newScore -= 200
+    //     }
+    //     $(this.box).replaceWith("<div class='used-box'>played</div>")
+    //     $('#current-score').html(newScore)
+    // });
 
     $('#gameboard').on('click', '#box3-c1', function () {
-        let answer = prompt("The animal's name that leads Santa's sleigh. >> Who is ... ")
-        if ((answer === 'Rudolph' || answer === 'rudolph' || answer === 'RUDOLPH') && (answer !== '')) {
+        let answer = (prompt("The animal's name that leads Santa's sleigh. >> Who is ... ").toUpperCase())
+            if ((answer === 'RUDOLPH') && (answer !== '')) {
             alert("YOU'RE AMAZING GIRL")
             newScore += 300
         }
