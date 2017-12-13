@@ -7,23 +7,23 @@ $(document).ready(function () {
     // DATA MANAGEMENT - questions for gameboard boxes/tiles
     // let triviaBoxes = [
     //     {
-    //     // boxId: 'box1-c1',
-    //     q1: 'The name of the reindeer belonging to Kristoff in the Disney story Frozen. Who is ...',
-    //     a1: 'Sven',
+    //     id:'0',
+    //     qestion: 'The name of the reindeer belonging to Kristoff in the Disney story Frozen. Who is ...',
+    //     answer: 'Sven',
     //     points: 100,
     //     },
 
     //     {
-    //     // boxId: 'box2-c1',
-    //     q1: 'to be determined',
-    //     a2: 'tbd',
+    //     id: '1',
+    //     question: 'to be determined',
+    //     answer: 'tbd',
     //     points: 200,
     //     },
 
     //     {
-    //     // boxId: 'box3-c1',
-    //     q3: 'tbd',
-    //     a3: 'tbd',
+    //     id;'2',
+    //     question: 'tbd',
+    //     answer: 'tbd',
     //     points: 200,
     //     }
     // ]
