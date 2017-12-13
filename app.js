@@ -13,14 +13,13 @@ $(document).ready(function () {
     //  HOLD ON THIS FOR NOW
 
     // TRIVIA QUESTIONS
-    let triviaQuestions = {
-        boxPosition: '#box2-c1',
-        varQuest: 'The animated character that is a reindeer in the Disney story Frozen. Your answer is > Who is ...',
+    let questions = {
+        trivia: 'The name of the reindeer belonging to Kristoff in the Disney story Frozen.'<br>'Who is ...',
         answer1: 'Sven',
         answer2: 'sven',
-        answer3: '',
-        pointValue: 100,
-    }
+        answer3: 'SVEN'
+        points: 100,
+        }
 
     $('#gameboard').on('click', '#box1-c1', function () {
         let answer = prompt('The animated character who plays a reindeer in the Disney story Frozen. COMPLETE ANSWER: Who is: ')
@@ -39,9 +38,10 @@ $(document).ready(function () {
         $('#current-score').html(newScore)
     });
 
-    $('#gameboard').on('click', '#box2-c1', function () {
-        let answer = prompt('The animated character who plays a reindeer in the Disney story Frozen. COMPLETE ANSWER: Who is: ')
-        if (answer === 'Sven' || 'sven' || 'SVEN') {
+    $('.box').on('click', function () {
+        let question = $(this.).attr('data-question')
+        let answer = prompt(question)
+        if ((answer === $(this).attr('answer1') || $(this).attr('answer2') || $(this).attr('answer3')) && (answer !== '')) {
             alert("That's correct!")
             newScore += 200
         }
@@ -55,7 +55,7 @@ $(document).ready(function () {
 
     $('#gameboard').on('click', '#box3-c1', function () {
         let answer = prompt("The animal's name that leads Santa's sleigh. >> Who is ... ")
-        if (answer === 'Rudolph' || 'rudolph' || 'RUDOLPH') {
+        if ((answer === 'Rudolph' || answer === 'rudolph' || answer === 'RUDOLPH') && (answer !== '')) {
             alert("YOU'RE AMAZING GIRL")
             newScore += 300
         }
@@ -63,13 +63,13 @@ $(document).ready(function () {
             alert("Sorry, that's incorrect")
             newScore -= 300
         }
-        $('#box-c1').replaceWith("<div class='used-box'>played</div>")
+        $('#box3-c1').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
     });
 
     $('#gameboard').on('click', '#box4-c1', function () {
         let answer = prompt('The animated character who plays a reindeer in the Disney story Frozen. COMPLETE ANSWER: Who is: ')
-        if (answer === 'Sven' || 'sven' || 'SVEN') {
+        if ((answer === 'Sven' || answer === 'sven' || answer === 'SVEN') && (answer !== '')) {
             alert("That's correct!")
             newScore += 400
         }
@@ -77,13 +77,13 @@ $(document).ready(function () {
             alert("Sorry, that's incorrect")
             newScore -= 400
         }
-        $('#box200-c1').replaceWith("<div class='used-box'>played</div>")
+        $('#box4-c1').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
     });
 
     $('#gameboard').on('click', '#box5-c1', function () {
         let answer = prompt('The animated character who plays a reindeer in the Disney story Frozen. COMPLETE ANSWER: Who is: ')
-        if (answer === 'Sven' || 'sven' || 'SVEN') {
+        if ((answer === 'Sven' || answer === 'sven' || answer === 'SVEN') && (answer !== '')) {
             alert("That's correct!")
             newScore += 500
         }
@@ -91,7 +91,7 @@ $(document).ready(function () {
             alert("Sorry, that's incorrect")
             newScore -= 500
         }
-        $('#box200-c1').replaceWith("<div class='used-box'>played</div>")
+        $('#box5-c1').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
     })
 
