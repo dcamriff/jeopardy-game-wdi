@@ -61,6 +61,55 @@ h1 {
       .rubberBand {
         animation-name: rubberBand;
       }
+#score-section {
+width: 80%;
+display: grid;
+grid-gap: 7px;
+grid-template-columns: 25% 25% 25% 25%;
+grid-template-rows: 75px ;
+padding: 20px 10px;
+}
+      
+h2 {
+font-family: 'Bungee', cursive;
+}
+
+.score {
+background-color: rgb(71, 41, 67);
+color: #fff;
+font-size: 20px;
+border-radius: 5px;
+padding: 10px 40px;
+font-weight: bold;
+text-align: center;
+margin: 3px; 
+}
+
+.reset-btn {
+background-color: rgba(161, 57, 57, .9);
+font-size: 20px;
+border-radius: 5px;
+padding: 10px 40px;
+font-weight: bold;
+text-align: center;
+margin: 3px;
+}
+
+img {
+  width: 50%;
+}
+@media (min-width: 40em) {
+  /* Probably some parent element that limits the img width */
+  main {
+    width: 80%;
+  }
+}
+
+.reset-btn:hover {
+  cursor: pointer;
+  background-color: rgb(161, 57, 57);
+  color: rgb(62, 117, 62);
+}
 
 .grid-container {
     width: 80%;
@@ -116,18 +165,4 @@ h1 {
     font-size: 100%;
     text-align: center;
     margin: 3px;
-}
-
-h2 {
-    font-family: 'Bungee', cursive;
-}
-.score {
-    background-color: rgb(71, 41, 67);
-    color: #fff;
-    font-size: 20px;
-    border-radius: 5px;
-    padding: 10px 40px;
-    font-weight: bold;
-    text-align: center;
-    margin: 3px; 
 }

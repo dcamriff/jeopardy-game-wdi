@@ -6,8 +6,14 @@ $(document).ready(function () {
     let boxesPlayed = 0
     console.log(boxesPlayed)
 
+    // RESET GAME AT ANY TIME
+    $('.reset-btn').on('click', function () {
+        location.reload()
+    })
+
+    // GAME RESET CONTROLLERS
     function gameOver() {
-        if (boxesPlayed >= 20) {
+        if (boxesPlayed >= 19) {
             alert("Congratulations! You've answered all trivia questions!")
         }
     }
@@ -78,9 +84,7 @@ $(document).ready(function () {
             alert("Not quite, but good try! The correct answer is: 'WHO IS SPONGE BOB SQUARE PANTS?'")
             newScore -= 100
         }
-        // make box no longer clickable
         $('#0').replaceWith("<div class='used-box'>played</div>")
-        // update score
         $('#current-score').html(newScore)
         boxesPlayed += 1
         console.log(boxesPlayed)
@@ -247,7 +251,7 @@ $(document).ready(function () {
         $('#10').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)        
+        console.log(boxesPlayed)
     });
 
     $('#gameboard').on('click', '#11', function () {
@@ -396,6 +400,6 @@ $(document).ready(function () {
         console.log(boxesPlayed)
     });
 
-    $('#gameboard').on('click', '#0', function(gameOver) {
+    $('#gameboard').on('click', '#0', function (gameOver) {
     })
 });
