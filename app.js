@@ -8,23 +8,23 @@ $(document).ready(function () {
     // let triviaBoxes = [
     //     {
     //     id: '0',
-    //     question: 'The name of the reindeer belonging to Kristoff in the Disney story Frozen. Who is ...',
-    //     answer: 'Sven',
+    //     question: 'He's usually seen guiding Santa's sleigh.',
+    //     answer: 'WHO IS RUDOLPH?',
     //     points: 100,
     //     },
 
     //     {
     //     id: '1',
-    //     question: '',
-    //     answer: 'tbd',
+    //     question: 'He's a mouse with big ears and bright yellow shoes.',
+    //     answer: 'WHO IS MICKEY?',
     //     points: 200,
     //     },
 
     //     {
     //     id; '2',
-    //     question: 'tbd',
-    //     answer: 'tbd',
-    //     points: 200,
+    //     question: 'The name of the reindeer belonging to Kristoff in the Disney story Frozen. Who is ...',
+    //     answer: 'WHO IS SVEN?',
+    //     points: 300,
     //     }
     // ]
     // ALERTS
