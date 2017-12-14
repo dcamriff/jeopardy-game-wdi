@@ -280,13 +280,13 @@ $(document).ready(function () {
     });
 
     $('#gameboard').on('click', '#14', function () {
-        let answer = (prompt("The name of the reindeer belonging to Kristoff in the Disney story Frozen.").toUpperCase())
-        if ((answer === 'WHO IS SVEN?') && (answer !== '')) {
+        let answer = (prompt("This branch of mathematics deals with shapes.").toUpperCase())
+        if ((answer === 'WHAT IS GEOMETRY?') && (answer !== '')) {
             alert("That's correct! You're on a roll!")
             newScore += 500
         }
         else {
-            alert("Hmm, that's not it, but try another!")
+            alert("Hmm, that's not it, but try another! The correct answer is: 'WHAT IS GEOMETRY?'")
             newScore -= 500
         }
         $('#14').replaceWith("<div class='used-box'>played</div>")
@@ -294,13 +294,13 @@ $(document).ready(function () {
     });
 
     $('#gameboard').on('click', '#15', function () {
-        let answer = (prompt("The name of the reindeer belonging to Kristoff in the Disney story Frozen.").toUpperCase())
-        if ((answer === 'WHO IS SVEN?') && (answer !== '')) {
+        let answer = (prompt("This starchy vegetable is used to make french fries.").toUpperCase())
+        if ((answer === 'WHAT IS A POTATO?') && (answer !== '')) {
             alert("Way to go! You are correct!")
             newScore += 100
         }
         else {
-            alert("Oh, that's not it, but keep trying!")
+            alert("Oh, that's not it, but keep trying! The correct answer is: 'WHAT IS A POTATO?'")
             newScore -= 100
         }
         $('#15').replaceWith("<div class='used-box'>played</div>")
@@ -308,14 +308,14 @@ $(document).ready(function () {
     });
 
     $('#gameboard').on('click', '#16', function () {
-        let answer = (prompt("He's usually seen guiding Santa's sleigh.").toUpperCase())
-        if ((answer === 'WHO IS RUDOLPH?') && (answer !== '')) {
+        let answer = (prompt("This bright red fruit that grows on a vine is often mistaken for a vegetable.").toUpperCase())
+        if ((answer === 'WHAT IS A TOMATO?') && (answer !== '')) {
             alert("That's correct!")
             newScore += 200
             console.log(newScore)
         }
         else {
-            alert('Not quite, but good try!')
+            alert("Not quite, but good try! The correct answer is: 'WHAT IS A TOMATO?'")
             newScore -= 200
         }
         // make box no longer clickable
@@ -325,13 +325,13 @@ $(document).ready(function () {
     });
 
     $('#gameboard').on('click', '#17', function () {
-        let answer = (prompt("He's a mouse with big ears and bright yellow shoes.").toUpperCase())
-        if ((answer === 'WHO IS MICKEY?') && (answer !== '')) {
+        let answer = (prompt("Buggs Bunny enjoys eating this orange vegetable. They can also grow in other colors like purple.").toUpperCase())
+        if ((answer === 'WHAT IS A CARROT?') && (answer !== '')) {
             alert("Way to go! You got it right!")
             newScore += 300
         }
         else {
-            alert("Oh, that's not it, but keep trying!")
+            alert("Oh, that's not it, but keep trying! The correct answer is: 'WHAT IS A CARROT?'")
             newScore -= 300
         }
         $('#17').replaceWith("<div class='used-box'>played</div>")
@@ -339,13 +339,13 @@ $(document).ready(function () {
     });
 
     $('#gameboard').on('click', '#18', function () {
-        let answer = (prompt("The name of the reindeer belonging to Kristoff in the Disney story Frozen.").toUpperCase())
-        if ((answer === 'WHO IS SVEN?') && (answer !== '')) {
+        let answer = (prompt("A dinosaur that ate only plants is referred to as this.").toUpperCase())
+        if ((answer === 'WHAT IS AN HERBIVORE?') && (answer !== '')) {
             alert("That's correct! You're on a roll!")
             newScore += 400
         }
         else {
-            alert("Hmm, that's not it, but try another!")
+            alert("Hmm, that's not it, but try another! The correct answer is: 'WHAT IS AN HERBIVORE?'")
             newScore -= 400
         }
         $('#18').replaceWith("<div class='used-box'>played</div>")
@@ -353,13 +353,13 @@ $(document).ready(function () {
     });
 
     $('#gameboard').on('click', '#19', function () {
-        let answer = (prompt("The name of the reindeer belonging to Kristoff in the Disney story Frozen.").toUpperCase())
-        if ((answer === 'WHO IS SVEN?') && (answer !== '')) {
+        let answer = (prompt("A person who does not eat or use animal products.").toUpperCase())
+        if ((answer === 'WHAT IS A VEGAN?') && (answer !== '')) {
             alert("That's correct! You're on a roll!")
             newScore += 400
         }
         else {
-            alert("Hmm, that's not it, but try another!")
+            alert("Hmm, that's not it, but try another! The correct answer is: 'WHAT IS A VEGAN?'")
             newScore -= 400
         }
         $('#19').replaceWith("<div class='used-box'>played</div>")
