@@ -66,7 +66,7 @@ h1 {
     width: 80%;
     display: grid;
     grid-gap: 7px;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 100px 100px 100px 100px 100px;
     padding: 20px 10px;
 }
