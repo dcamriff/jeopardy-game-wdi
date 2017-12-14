@@ -37,4 +37,6 @@ Here are the user stories and a link to my [Trello Board](https://trello.com/b/0
  ## FUTURE DEVELOPMENT
  - Add more responsive features
  - Add a second player feature
- - 
+ - Add additional color and background themes for kids to choose from
+ - Add modal-like display for questions and multiple choice answers
+ - Add multiple games
