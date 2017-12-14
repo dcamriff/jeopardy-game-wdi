@@ -5,7 +5,8 @@ body {
     /* padding: 5px; */
     font-family: 'Lato', sans-serif;
     text-align: center;
-    background-color: #E75151;
+    background-image: url("images/Artboard-1.png")
+    /* background-color: #E75151; */
     /* background-image: url("images/round.png") */
 }
 header {
@@ -30,14 +31,14 @@ header {
 }
 
 .boxcat {
-    background-color: rgb(71, 41, 67);
+    background-color: #C2C57F;
     color: #fff;
     border-radius: 5px;
     padding: 15px;
-    font-size: 100%;
+    font-size: 150%;
     text-align: center;
     margin: 3px;
-    height: 40px;
+    height: 80px;
     font-weight: bold;
   }
 .box {
@@ -52,7 +53,7 @@ header {
     height: 40px;
   }
 .box:hover {
-    background-color: yellow;
+    background-color: #A13939;
     color: 
     cursor: pointer;
 }
@@ -75,6 +76,10 @@ header {
     font-size: 100%;
     text-align: center;
     margin: 3px;
+}
+
+h2 {
+    font-family: 'Bungee', cursive;
 }
 .score {
     background-color: rgb(71, 41, 67);
