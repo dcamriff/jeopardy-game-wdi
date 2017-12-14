@@ -13,10 +13,9 @@ Having two young girls, I get to see the positive impact that educational games 
 Here are the user stories and a link to my [Trello Board](https://trello.com/b/0b5flAN0/wdi-project-1-diane-jeopardy) where I planned out my project.
 
 ## WIREFRAMES
-[Jeopardy-Home-Page-Wireframe](https://github.com/dcamriff/jeopardy-game-wdi/blob/master/images/Screen%20Shot%202017-12-11%20at%204.53.14%20PM.png)
+![Jeopardy-Home-Page-Wireframe](https://github.com/dcamriff/jeopardy-game-wdi/blob/master/images/Screen%20Shot%202017-12-11%20at%204.53.14%20PM.png)
 
-![Jeopardy-Trivia-Prompt-Wireframe]
-(https://github.com/dcamriff/jeopardy-game-wdi/blob/master/images/wireframe-prompt.png)
+![Jeopardy-Trivia-Prompt-Wireframe](https://github.com/dcamriff/jeopardy-game-wdi/blob/master/images/wireframe-prompt.png)
 
 ## TECHNOLOGIES USED
  - Languages - HTML5, CSS3, Javascript, jQuery
