@@ -6,6 +6,12 @@ $(document).ready(function () {
     let boxesPlayed = 0
     console.log(boxesPlayed)
 
+    function gameOver() {
+        if (boxesPlayed >= 20) {
+            alert("Congratulations! You've answered all trivia questions!")
+        }
+    }
+
     // DATA MANAGEMENT - questions for gameboard boxes/tiles
     // let triviaBoxes = [
     //     {
@@ -159,6 +165,8 @@ $(document).ready(function () {
         }
         $('#5').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
+        boxesPlayed += 1
+        console.log(boxesPlayed)
     });
 
     $('#gameboard').on('click', '#6', function () {
@@ -173,6 +181,8 @@ $(document).ready(function () {
         }
         $('#6').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
+        boxesPlayed += 1
+        console.log(boxesPlayed)
     });
 
     $('#gameboard').on('click', '#7', function () {
@@ -187,6 +197,8 @@ $(document).ready(function () {
         }
         $('#7').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
+        boxesPlayed += 1
+        console.log(boxesPlayed)
     });
 
     $('#gameboard').on('click', '#8', function () {
@@ -200,10 +212,10 @@ $(document).ready(function () {
             alert("Not quite, but good try! The correct answer is: 'WHAT IS INSTAGRAM?'")
             newScore -= 400
         }
-        // make box no longer clickable
         $('#8').replaceWith("<div class='used-box'>played</div>")
-        // update score
         $('#current-score').html(newScore)
+        boxesPlayed += 1
+        console.log(boxesPlayed)
     });
 
     $('#gameboard').on('click', '#9', function () {
@@ -218,6 +230,8 @@ $(document).ready(function () {
         }
         $('#9').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
+        boxesPlayed += 1
+        console.log(boxesPlayed)
     });
 
     $('#gameboard').on('click', '#10', function () {
@@ -232,6 +246,8 @@ $(document).ready(function () {
         }
         $('#10').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
+        boxesPlayed += 1
+        console.log(boxesPlayed)        
     });
 
     $('#gameboard').on('click', '#11', function () {
@@ -246,6 +262,8 @@ $(document).ready(function () {
         }
         $('#11').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
+        boxesPlayed += 1
+        console.log(boxesPlayed)
     });
 
     $('#gameboard').on('click', '#12', function () {
@@ -259,10 +277,10 @@ $(document).ready(function () {
             alert("Not quite, but good try! The correct answer is: 'WHAT IS SUBTRACT?'")
             newScore -= 300
         }
-        // make box no longer clickable
         $('#12').replaceWith("<div class='used-box'>played</div>")
-        // update score
         $('#current-score').html(newScore)
+        boxesPlayed += 1
+        console.log(boxesPlayed)
     });
 
     $('#gameboard').on('click', '#13', function () {
@@ -277,6 +295,8 @@ $(document).ready(function () {
         }
         $('#13').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
+        boxesPlayed += 1
+        console.log(boxesPlayed)
     });
 
     $('#gameboard').on('click', '#14', function () {
@@ -291,6 +311,8 @@ $(document).ready(function () {
         }
         $('#14').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
+        boxesPlayed += 1
+        console.log(boxesPlayed)
     });
 
     $('#gameboard').on('click', '#15', function () {
@@ -305,6 +327,8 @@ $(document).ready(function () {
         }
         $('#15').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
+        boxesPlayed += 1
+        console.log(boxesPlayed)
     });
 
     $('#gameboard').on('click', '#16', function () {
@@ -318,10 +342,10 @@ $(document).ready(function () {
             alert("Not quite, but good try! The correct answer is: 'WHAT IS A TOMATO?'")
             newScore -= 200
         }
-        // make box no longer clickable
         $('#16').replaceWith("<div class='used-box'>played</div>")
-        // update score
         $('#current-score').html(newScore)
+        boxesPlayed += 1
+        console.log(boxesPlayed)
     });
 
     $('#gameboard').on('click', '#17', function () {
@@ -336,6 +360,8 @@ $(document).ready(function () {
         }
         $('#17').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
+        boxesPlayed += 1
+        console.log(boxesPlayed)
     });
 
     $('#gameboard').on('click', '#18', function () {
@@ -350,6 +376,8 @@ $(document).ready(function () {
         }
         $('#18').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
+        boxesPlayed += 1
+        console.log(boxesPlayed)
     });
 
     $('#gameboard').on('click', '#19', function () {
@@ -364,12 +392,10 @@ $(document).ready(function () {
         }
         $('#19').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
+        boxesPlayed += 1
+        console.log(boxesPlayed)
     });
 
-    // function() {
-    //     if (boxesPlayed >=20) {
-    //         alert("Congratulations! You've answered all trivia questions!")
-    //     }
-    // }
-
+    $('#gameboard').on('click', '#0', function(gameOver) {
+    })
 });
