@@ -98,7 +98,7 @@ $(document).ready(function () {
         newScore += 400
     }
     else {
-        alert("Sorry, that's incorrect")
+        alert("Hmm, that's not it, but try another!")
             newScore -= 400
         }
         $('#2').replaceWith("<div class='used-box'>played</div>")
@@ -117,6 +117,228 @@ $(document).ready(function () {
         }
         $('#3').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
-    })
+    });
+
+    $('#gameboard').on('click', '#4', function () {
+        let answer = (prompt("He's usually seen guiding Santa's sleigh.").toUpperCase())
+        if ((answer === 'WHO IS RUDOLPH?') && (answer !== '')) {
+            alert("That's correct!")
+            newScore += 100
+            console.log(newScore)
+        }
+        else {
+            alert('Not quite, but good try!')
+            newScore -= 100
+        }
+        // make box no longer clickable
+        $('#4').replaceWith("<div class='used-box'>played</div>")
+        // update score
+        $('#current-score').html(newScore)
+    });
+
+    $('#gameboard').on('click', '#5', function () {
+        let answer = (prompt("He's a mouse with big ears and bright yellow shoes.").toUpperCase())
+            if ((answer === 'WHO IS MICKEY?') && (answer !== '')) {
+            alert("Way to go! You got it right!")
+            newScore += 300
+        }
+        else {
+            alert("Oh, that's not it, but keep trying!")
+            newScore -= 300
+        }
+        $('#5').replaceWith("<div class='used-box'>played</div>")
+        $('#current-score').html(newScore)
+    });
+
+    $('#gameboard').on('click', '#6', function () {
+        let answer = (prompt("The name of the reindeer belonging to Kristoff in the Disney story Frozen.").toUpperCase())
+        if ((answer === 'WHO IS SVEN?') && (answer !== '')) {
+        alert("That's correct! You're on a roll!")
+        newScore += 400
+    }
+    else {
+        alert("Hmm, that's not it, but try another!")
+            newScore -= 400
+        }
+        $('#6').replaceWith("<div class='used-box'>played</div>")
+        $('#current-score').html(newScore)
+    });
+
+    $('#gameboard').on('click', '#7', function () {
+        let answer = (prompt("The name of the reindeer belonging to Kristoff in the Disney story Frozen.").toUpperCase())
+        if ((answer === 'WHO IS SVEN?') && (answer !== '')) {
+        alert("Way to go! You are correct!")
+        newScore += 400
+    }
+    else {
+        alert("Oh, that's not it, but keep trying!")
+            newScore -= 400
+        }
+        $('#7').replaceWith("<div class='used-box'>played</div>")
+        $('#current-score').html(newScore)
+    });
+
+    $('#gameboard').on('click', '#8', function () {
+        let answer = (prompt("He's usually seen guiding Santa's sleigh.").toUpperCase())
+        if ((answer === 'WHO IS RUDOLPH?') && (answer !== '')) {
+            alert("That's correct!")
+            newScore += 100
+            console.log(newScore)
+        }
+        else {
+            alert('Not quite, but good try!')
+            newScore -= 100
+        }
+        // make box no longer clickable
+        $('#8').replaceWith("<div class='used-box'>played</div>")
+        // update score
+        $('#current-score').html(newScore)
+    });
+
+    $('#gameboard').on('click', '#9', function () {
+        let answer = (prompt("He's a mouse with big ears and bright yellow shoes.").toUpperCase())
+            if ((answer === 'WHO IS MICKEY?') && (answer !== '')) {
+            alert("Way to go! You got it right!")
+            newScore += 300
+        }
+        else {
+            alert("Oh, that's not it, but keep trying!")
+            newScore -= 300
+        }
+        $('#9').replaceWith("<div class='used-box'>played</div>")
+        $('#current-score').html(newScore)
+    });
+
+    $('#gameboard').on('click', '#10', function () {
+        let answer = (prompt("The name of the reindeer belonging to Kristoff in the Disney story Frozen.").toUpperCase())
+        if ((answer === 'WHO IS SVEN?') && (answer !== '')) {
+        alert("That's correct! You're on a roll!")
+        newScore += 400
+    }
+    else {
+        alert("Hmm, that's not it, but try another!")
+            newScore -= 400
+        }
+        $('#10').replaceWith("<div class='used-box'>played</div>")
+        $('#current-score').html(newScore)
+    });
+
+    $('#gameboard').on('click', '#11', function () {
+        let answer = (prompt("The name of the reindeer belonging to Kristoff in the Disney story Frozen.").toUpperCase())
+        if ((answer === 'WHO IS SVEN?') && (answer !== '')) {
+        alert("Way to go! You are correct!")
+        newScore += 400
+    }
+    else {
+        alert("Oh, that's not it, but keep trying!")
+            newScore -= 400
+        }
+        $('#11').replaceWith("<div class='used-box'>played</div>")
+        $('#current-score').html(newScore)
+    });
+
+    $('#gameboard').on('click', '#12', function () {
+        let answer = (prompt("He's usually seen guiding Santa's sleigh.").toUpperCase())
+        if ((answer === 'WHO IS RUDOLPH?') && (answer !== '')) {
+            alert("That's correct!")
+            newScore += 100
+            console.log(newScore)
+        }
+        else {
+            alert('Not quite, but good try!')
+            newScore -= 100
+        }
+        // make box no longer clickable
+        $('#12').replaceWith("<div class='used-box'>played</div>")
+        // update score
+        $('#current-score').html(newScore)
+    });
+
+    $('#gameboard').on('click', '#13', function () {
+        let answer = (prompt("He's a mouse with big ears and bright yellow shoes.").toUpperCase())
+            if ((answer === 'WHO IS MICKEY?') && (answer !== '')) {
+            alert("Way to go! You got it right!")
+            newScore += 300
+        }
+        else {
+            alert("Oh, that's not it, but keep trying!")
+            newScore -= 300
+        }
+        $('#13').replaceWith("<div class='used-box'>played</div>")
+        $('#current-score').html(newScore)
+    });
+
+    $('#gameboard').on('click', '#14', function () {
+        let answer = (prompt("The name of the reindeer belonging to Kristoff in the Disney story Frozen.").toUpperCase())
+        if ((answer === 'WHO IS SVEN?') && (answer !== '')) {
+        alert("That's correct! You're on a roll!")
+        newScore += 400
+    }
+    else {
+        alert("Hmm, that's not it, but try another!")
+            newScore -= 400
+        }
+        $('#14').replaceWith("<div class='used-box'>played</div>")
+        $('#current-score').html(newScore)
+    });
+
+    $('#gameboard').on('click', '#15', function () {
+        let answer = (prompt("The name of the reindeer belonging to Kristoff in the Disney story Frozen.").toUpperCase())
+        if ((answer === 'WHO IS SVEN?') && (answer !== '')) {
+        alert("Way to go! You are correct!")
+        newScore += 400
+    }
+    else {
+        alert("Oh, that's not it, but keep trying!")
+            newScore -= 400
+        }
+        $('#15').replaceWith("<div class='used-box'>played</div>")
+        $('#current-score').html(newScore)
+    });
+    
+    $('#gameboard').on('click', '#16', function () {
+        let answer = (prompt("He's usually seen guiding Santa's sleigh.").toUpperCase())
+        if ((answer === 'WHO IS RUDOLPH?') && (answer !== '')) {
+            alert("That's correct!")
+            newScore += 100
+            console.log(newScore)
+        }
+        else {
+            alert('Not quite, but good try!')
+            newScore -= 100
+        }
+        // make box no longer clickable
+        $('#16').replaceWith("<div class='used-box'>played</div>")
+        // update score
+        $('#current-score').html(newScore)
+    });
+
+    $('#gameboard').on('click', '#17', function () {
+        let answer = (prompt("He's a mouse with big ears and bright yellow shoes.").toUpperCase())
+            if ((answer === 'WHO IS MICKEY?') && (answer !== '')) {
+            alert("Way to go! You got it right!")
+            newScore += 300
+        }
+        else {
+            alert("Oh, that's not it, but keep trying!")
+            newScore -= 300
+        }
+        $('#17').replaceWith("<div class='used-box'>played</div>")
+        $('#current-score').html(newScore)
+    });
+
+    $('#gameboard').on('click', '#18', function () {
+        let answer = (prompt("The name of the reindeer belonging to Kristoff in the Disney story Frozen.").toUpperCase())
+        if ((answer === 'WHO IS SVEN?') && (answer !== '')) {
+        alert("That's correct! You're on a roll!")
+        newScore += 400
+    }
+    else {
+        alert("Hmm, that's not it, but try another!")
+            newScore -= 400
+        }
+        $('#19').replaceWith("<div class='used-box'>played</div>")
+        $('#current-score').html(newScore)
+    });
 
 });
