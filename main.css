@@ -10,7 +10,8 @@ body {
     /* background-image: url("images/round.png") */
 }
 header {
-    background-color: #A13939;
+    background-color: rgba(161, 57, 57, .9);
+    border-radius: 5px;
     height: 125px;
     padding: 30px 5px 5px 5px;
     width: 100%;
@@ -94,7 +95,6 @@ h1 {
   }
 .box:hover {
     background-color: #A13939;
-    color: 
     cursor: pointer;
 }
 
@@ -124,8 +124,9 @@ h2 {
 .score {
     background-color: rgb(71, 41, 67);
     color: #fff;
+    font-size: 20px;
     border-radius: 5px;
-    padding: 50px;
+    padding: 10px 40px;
     font-weight: bold;
     text-align: center;
     margin: 3px; 
