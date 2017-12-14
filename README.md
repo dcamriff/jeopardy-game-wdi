@@ -34,6 +34,6 @@ Here are the user stories and a link to my [Trello Board](https://trello.com/b/0
  - Reset Game Button
 
  ## FUTURE DEVELOPMENT
- - Make it more responsive
+ - Add more responsive features
  - Add a second player feature
  - 
