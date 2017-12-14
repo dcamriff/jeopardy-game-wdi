@@ -176,13 +176,13 @@ $(document).ready(function () {
     });
 
     $('#gameboard').on('click', '#7', function () {
-        let answer = (prompt("Statistics show that learning to play this musical instrument that has black and white keys, can improve your math score.").toUpperCase())
-        if ((answer === 'WHAT IS A PIANO?' || answer === 'WHAT IS THE PIANO?') && (answer !== '')) {
+        let answer = (prompt("Thankfully, some parents enjoy this holiday where you dress in costume, just as much as kids do.").toUpperCase())
+        if ((answer === 'WHAT IS HALLOWEEN?') && (answer !== '')) {
             alert("Way to go! You are correct!")
             newScore += 300
         }
         else {
-            alert("Oh, that's not it, but keep trying! The correct answer is: 'WHAT IS A PIANO?' or 'WHAT IS THE PIANO?' ")
+            alert("Oh, that's not it, but keep trying! The correct answer is: ''WHAT IS HALLOWEEN?'")
             newScore -= 300
         }
         $('#7').replaceWith("<div class='used-box'>played</div>")
@@ -221,13 +221,13 @@ $(document).ready(function () {
     });
 
     $('#gameboard').on('click', '#10', function () {
-        let answer = (prompt("This sign").toUpperCase())
-        if ((answer === 'WHO IS SVEN?') && (answer !== '')) {
+        let answer = (prompt("A poular character on Sessame Street, he enjoys counting.").toUpperCase())
+        if ((answer === 'WHO IS COUNT DRACULA?') && (answer !== '')) {
             alert("That's correct! You're on a roll!")
             newScore += 100
         }
         else {
-            alert("Hmm, that's not it, but try another!")
+            alert("Hmm, that's not it, but try another! The correct answer is: 'WHO IS COUNT DRACULA?'")
             newScore -= 100
         }
         $('#10').replaceWith("<div class='used-box'>played</div>")
@@ -235,13 +235,13 @@ $(document).ready(function () {
     });
 
     $('#gameboard').on('click', '#11', function () {
-        let answer = (prompt("The name of the reindeer belonging to Kristoff in the Disney story Frozen.").toUpperCase())
-        if ((answer === 'WHO IS SVEN?') && (answer !== '')) {
+        let answer = (prompt("If you wanted to ________ 5 and 6 to equal 30, you use asterisk symbol shown here: ' * '").toUpperCase())
+        if ((answer === 'WHAT IS MULTIPLY?') && (answer !== '')) {
             alert("Way to go! You are correct!")
             newScore += 200
         }
         else {
-            alert("Oh, that's not it, but keep trying!")
+            alert("Oh, that's not it, but keep trying! The correct answer is: 'WHAT IS MULTIPLY?'")
             newScore -= 200
         }
         $('#11').replaceWith("<div class='used-box'>played</div>")
@@ -249,14 +249,14 @@ $(document).ready(function () {
     });
 
     $('#gameboard').on('click', '#12', function () {
-        let answer = (prompt("He's usually seen guiding Santa's sleigh.").toUpperCase())
-        if ((answer === 'WHO IS RUDOLPH?') && (answer !== '')) {
+        let answer = (prompt("If you had 5 apples and wanted to take away 2 of them, you would _____ them.").toUpperCase())
+        if ((answer === 'WHAT IS SUBTRACT?') && (answer !== '')) {
             alert("That's correct!")
             newScore += 300
             console.log(newScore)
         }
         else {
-            alert('Not quite, but good try!')
+            alert("Not quite, but good try! The correct answer is: 'WHAT IS SUBTRACT?'")
             newScore -= 300
         }
         // make box no longer clickable
@@ -266,13 +266,13 @@ $(document).ready(function () {
     });
 
     $('#gameboard').on('click', '#13', function () {
-        let answer = (prompt("He's a mouse with big ears and bright yellow shoes.").toUpperCase())
-        if ((answer === 'WHO IS MICKEY?') && (answer !== '')) {
+        let answer = (prompt("Statistics show that learning to play this musical instrument that has black and white keys, can improve your math score.").toUpperCase())
+        if ((answer === 'WHAT IS A PIANO?' || answer === 'WHAT IS THE PIANO?') && (answer !== '')) {
             alert("Way to go! You got it right!")
             newScore += 400
         }
         else {
-            alert("Oh, that's not it, but keep trying!")
+            alert("Oh, that's not it, but keep trying! The correct answer is: 'WHAT IS A PIANO?'")
             newScore -= 400
         }
         $('#13').replaceWith("<div class='used-box'>played</div>")
@@ -366,10 +366,10 @@ $(document).ready(function () {
         $('#current-score').html(newScore)
     });
 
-    function() {
-        if (boxesPlayed >=20) {
-            alert("Congratulations! You've answered all trivia questions!")
-        }
-    }
+    // function() {
+    //     if (boxesPlayed >=20) {
+    //         alert("Congratulations! You've answered all trivia questions!")
+    //     }
+    // }
 
 });
