@@ -13,67 +13,12 @@ $(document).ready(function () {
 
     // GAME RESET CONTROLLERS
     function gameOver() {
-        if (boxesPlayed >= 19) {
+        if (boxesPlayed >= 20) {
             alert("Congratulations! You've answered all trivia questions!")
         }
     }
 
-    // DATA MANAGEMENT - questions for gameboard boxes/tiles
-    // let triviaBoxes = [
-    //     {
-    //     id: '0',
-    //     question: 'He's usually seen guiding Santa's sleigh.',
-    //     answer: 'WHO IS RUDOLPH?',
-    //     points: 100,
-    //     },
-
-    //     {
-    //     id: '1',
-    //     question: "He's a mouse with big ears and bright yellow shoes.",
-    //     answer: 'WHO IS MICKEY?',
-    //     points: 200,
-    //     },
-
-    //     {
-    //     id; '2',
-    //     question: 'The name of the reindeer belonging to Kristoff in the Disney story Frozen.',
-    //     answer: 'WHO IS SVEN?',
-    //     points: 300,
-    //     }
-    // ]
-    // ALERTS
-    // const correctAlert1 = alert("That's correct! You're on a roll!")
-    // const correctAlert2 = alert('Fantastic! You answered correctly!')
-    // const correctAlert3 = alert("Way to go! You are correct!")
-    // const incorrectAlert1 = alert('Not quite, but good try!')
-    // const incorrectAlert2 = alert("Oh, that's not it, but keep trying!")
-    // const incorrectAlert3 = alert("Hmm, that's not it, but try another!")
-
-    // PSEUDOCODE IT...
-    // When a box is clicked
-    // create a variable that looks up the clicked on box's id
-    // take that new variable and set it equal to the array index
-    // find the object attributes of that index
-    // $('#gameboard').on('click', function (event) {
-    //     // let indexNum = parseInt.data(box)
-    //     $('div').click(handler).find('#id')
-    //     let question = $(this).attr('data-box')
-    //     let answer = (prompt(question).toUpperCase())
-    //     if ((answer === $(this).triviaBoxes[indexNum].answer) && (answer !== '')) {
-    //         correctAlert1()
-    //         newScore += $(this).triviaBoxes[indexNum].points
-    //     }
-    //     else {
-    //         incorrectAlert1()
-    //         newScore -= $(this).triviaBoxes[indexNum].points
-    //     }
-    //     $(this.box).replaceWith("<div class='used-box'>played</div>")
-    //     $('#current-score').html(newScore)
-    // });
-    // TESTING ABOVE
-    // 
-
-    //   THIS ONE HERE IS MASTER THAT IS WORKING -- DO NOT TOUCH BELOW!!
+    // GAMEBOARD PLAYER CONTROL
     $('#gameboard').on('click', '#0', function () {
         let answer = (prompt("He lives in a pineapple under the sea.").toUpperCase())
         if ((answer === 'WHO IS SPONGE BOB SQUARE PANTS?') && (answer !== '')) {
@@ -87,7 +32,7 @@ $(document).ready(function () {
         $('#0').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#1', function () {
@@ -103,7 +48,7 @@ $(document).ready(function () {
         $('#1').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#2', function () {
@@ -119,7 +64,7 @@ $(document).ready(function () {
         $('#2').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#3', function () {
@@ -135,7 +80,7 @@ $(document).ready(function () {
         $('#3').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#4', function () {
@@ -154,7 +99,7 @@ $(document).ready(function () {
         // update score
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#5', function () {
@@ -170,7 +115,7 @@ $(document).ready(function () {
         $('#5').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#6', function () {
@@ -186,7 +131,7 @@ $(document).ready(function () {
         $('#6').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#7', function () {
@@ -202,7 +147,7 @@ $(document).ready(function () {
         $('#7').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#8', function () {
@@ -219,7 +164,7 @@ $(document).ready(function () {
         $('#8').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#9', function () {
@@ -235,7 +180,7 @@ $(document).ready(function () {
         $('#9').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#10', function () {
@@ -251,7 +196,7 @@ $(document).ready(function () {
         $('#10').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#11', function () {
@@ -267,7 +212,7 @@ $(document).ready(function () {
         $('#11').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#12', function () {
@@ -284,7 +229,7 @@ $(document).ready(function () {
         $('#12').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#13', function () {
@@ -300,7 +245,7 @@ $(document).ready(function () {
         $('#13').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#14', function () {
@@ -316,7 +261,7 @@ $(document).ready(function () {
         $('#14').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#15', function () {
@@ -332,7 +277,7 @@ $(document).ready(function () {
         $('#15').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#16', function () {
@@ -349,7 +294,7 @@ $(document).ready(function () {
         $('#16').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#17', function () {
@@ -365,7 +310,7 @@ $(document).ready(function () {
         $('#17').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#18', function () {
@@ -381,7 +326,7 @@ $(document).ready(function () {
         $('#18').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
 
     $('#gameboard').on('click', '#19', function () {
@@ -397,9 +342,6 @@ $(document).ready(function () {
         $('#19').replaceWith("<div class='used-box'>played</div>")
         $('#current-score').html(newScore)
         boxesPlayed += 1
-        console.log(boxesPlayed)
+        gameOver()
     });
-
-    $('#gameboard').on('click', '#0', function (gameOver) {
-    })
 });

@@ -32,6 +32,7 @@ Here are the user stories and a link to my [Trello Board](https://trello.com/b/0
  - Highlights already played tiles
  - Alerts with correct answer
  - Reset Game Button
+ - Alert When All Tiles Played/Player Won
 
  ## FUTURE DEVELOPMENT
  - Add more responsive features
