@@ -6,6 +6,9 @@ For my first WDI Project, I decided to create a Jeopardy Game for Kids.
 You can view the live site here:
 https://www.bitballoon.com/sites/jeopardy-for-kids-game-5e11a7
 
+The link to my github repo is here: https://github.com/dcamriff/jeopardy-game-wdi
+
+
 ## INSPIRATION
 Having two young girls, I get to see the positive impact that educational games and apps have on their ability to enjoy learning. This game encourages young minds to use memory, practice typing, spelling and punctuation skills, and injects a little laughter into their learning also.
 
