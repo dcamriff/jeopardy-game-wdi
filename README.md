@@ -4,7 +4,7 @@
 For my first WDI Project, I decided to create a Jeopardy Game for Kids.
 
 You can view the live site here:
-https://www.bitballoon.com/sites/jeopardy-for-kids-game-5e11a7
+http://jeopardy-for-kids-game-5e11a7.bitballoon.com/
 
 The link to my github repo is here: https://github.com/dcamriff/jeopardy-game-wdi
 
